@@ -4,8 +4,9 @@ class Solution(object):
         j=len(nums)-1
         k=len(nums)-1
         result=[0]*len(nums)
+
         while i<=j:
-            if abs(nums[i])>abs(nums[j]):
+            if nums[i]*nums[i]>nums[j]*nums[j]:
                 result[k]=nums[i]*nums[i]
                 i+=1
             else:
